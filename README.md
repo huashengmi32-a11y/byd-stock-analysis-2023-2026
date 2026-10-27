@@ -4,6 +4,12 @@
 2024-2026 年比亚迪 `002594.SZ` 后复权日行情，完成数据核验、指标计算、
 Excel 工作簿和交互式网页仪表盘。
 
+GitHub 仓库：
+<https://github.com/huashengmi32-a11y/byd-stock-analysis-2023-2026>
+
+在线仪表盘：
+<https://huashengmi32-a11y.github.io/byd-stock-analysis-2023-2026/>
+
 ![桌面仪表盘](artifacts/screenshots/desktop-1440.png)
 
 ## 交付物

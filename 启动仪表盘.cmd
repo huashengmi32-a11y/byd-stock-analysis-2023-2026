@@ -2,6 +2,12 @@
 setlocal
 cd /d "%~dp0"
 
+if not exist "node_modules" (
+  echo Installing dependencies...
+  call pnpm install
+  if errorlevel 1 pause
+)
+
 if not exist "dist\index.html" (
   echo Building dashboard...
   call pnpm build
