@@ -1,0 +1,195 @@
+{
+  "tools": [
+    {
+      "name": "get-component-list",
+      "description": "获取 TDesign 所有可用的组件列表，适用场景：选择合适组件进行组合实现不存在的功能",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "framework": {
+            "type": "string",
+            "enum": [
+              "react",
+              "react-chat",
+              "vue",
+              "vue-next",
+              "vue-next-chat",
+              "mobile-react",
+              "mobile-vue",
+              "miniprogram",
+              "miniprogram-chat",
+              "uniapp",
+              "uniapp-chat"
+            ],
+            "description": "如果用户没有指定，根据 package.json 中的依赖判断"
+          }
+        },
+        "required": [
+          "framework"
+        ]
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "get-component-docs",
+      "description": "获取 TDesign 组件的文档，适用场景：代码生成和代码转换，支持多个组件同时查询",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "framework": {
+            "type": "string",
+            "enum": [
+              "react",
+              "react-chat",
+              "vue",
+              "vue-next",
+              "vue-next-chat",
+              "mobile-react",
+              "mobile-vue",
+              "miniprogram",
+              "miniprogram-chat",
+              "uniapp",
+              "uniapp-chat"
+            ],
+            "description": "如果用户没有指定，根据 package.json 中的依赖判断"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "可用的组件名称，支持批量查询"
+          }
+        },
+        "required": [
+          "framework",
+          "names"
+        ]
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "get-component-dom",
+      "description": "获取 TDesign 组件的 DOM 结构，适用场景：转换用户自定义的 CSS 样式, 支持多个组件同时查询",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "framework": {
+            "type": "string",
+            "enum": [
+              "react",
+              "react-chat",
+              "vue",
+              "vue-next",
+              "vue-next-chat",
+              "mobile-react",
+              "mobile-vue",
+              "miniprogram",
+              "miniprogram-chat",
+              "uniapp",
+              "uniapp-chat"
+            ],
+            "description": "如果用户没有指定，根据 package.json 中的依赖判断"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "可用的组件名称，支持批量查询"
+          }
+        },
+        "required": [
+          "framework",
+          "names"
+        ]
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "get-component-changelog",
+      "description": "获取 TDesign 组件的变更日志，适用场景：组件库版本升级，支持多个组件同时查询",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "framework": {
+            "type": "string",
+            "enum": [
+              "react",
+              "react-chat",
+              "vue",
+              "vue-next",
+              "vue-next-chat",
+              "mobile-react",
+              "mobile-vue",
+              "miniprogram",
+              "miniprogram-chat",
+              "uniapp",
+              "uniapp-chat"
+            ],
+            "description": "如果用户没有指定，根据 package.json 中的依赖判断；"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "可用的组件名称，支持批量查询"
+          },
+          "version": {
+            "description": "返回大于等于该版本号的日志，如果用户没有指定，根据 package.json 中的依赖判断",
+            "type": "string"
+          }
+        },
+        "required": [
+          "framework",
+          "names"
+        ]
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    },
+    {
+      "name": "search-icon",
+      "description": "根据英文关键词查询 TDesign 图标库的完整图标名。支持一次传入多个关键词：优先返回同时命中所有关键词的图标（AND），若无结果则降级为命中任一关键词（OR），并按命中数量评分排序。适用场景：图标查找与名称确认",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "用于匹配图标名的关键词列表（仅支持英文）"
+          },
+          "limit": {
+            "default": 20,
+            "description": "返回结果数量上限，避免返回数据过多",
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          }
+        },
+        "required": [
+          "keywords"
+        ]
+      },
+      "execution": {
+        "taskSupport": "forbidden"
+      }
+    }
+  ]
+}

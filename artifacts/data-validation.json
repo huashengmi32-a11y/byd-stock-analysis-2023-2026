@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "rows": 922,
+  "dateRange": [
+    "2023-01-03",
+    "2026-10-27"
+  ],
+  "overlapRows": 242,
+  "maxOverlapDifference": 0.0,
+  "latestClose": 256.57,
+  "periodReturnPct": -1.97,
+  "annualizedVolatilityPct": 30.8,
+  "maxDrawdownPct": -44.56,
+  "excelSheets": [
+    "任务说明",
+    "完整行情",
+    "年度统计",
+    "月度统计",
+    "指标摘要",
+    "收盘走势",
+    "成交量"
+  ],
+  "excelCharts": 3
+}

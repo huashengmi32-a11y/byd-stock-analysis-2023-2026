@@ -1,0 +1,70 @@
+{
+  "baseURL": "http://127.0.0.1:4174/",
+  "interaction": {
+    "initialRange": "2023-01-03 — 2026-10-27",
+    "oneYearRange": "2025-10-27 — 2026-10-27",
+    "csvDownload": "比亚迪_2025-10-27_2026-10-27.csv",
+    "excelStatus": 200
+  },
+  "reducedMotion": "auto",
+  "results": [
+    {
+      "label": "mobile-375",
+      "viewport": "375x900",
+      "pageWidth": 375,
+      "pageHeight": 4158,
+      "canvases": 3,
+      "canvasPixels": {
+        "painted": 7365,
+        "red": 2412,
+        "green": 2373,
+        "dark": 21,
+        "colors": 300
+      }
+    },
+    {
+      "label": "tablet-768",
+      "viewport": "768x960",
+      "pageWidth": 768,
+      "pageHeight": 3634,
+      "canvases": 3,
+      "canvasPixels": {
+        "painted": 13807,
+        "red": 4235,
+        "green": 4594,
+        "dark": 23,
+        "colors": 300
+      }
+    },
+    {
+      "label": "laptop-1024",
+      "viewport": "1024x900",
+      "pageWidth": 1024,
+      "pageHeight": 2572,
+      "canvases": 3,
+      "canvasPixels": {
+        "painted": 11702,
+        "red": 3655,
+        "green": 3748,
+        "dark": 23,
+        "colors": 300
+      }
+    },
+    {
+      "label": "desktop-1440",
+      "viewport": "1440x1000",
+      "pageWidth": 1440,
+      "pageHeight": 2348,
+      "canvases": 3,
+      "canvasPixels": {
+        "painted": 16783,
+        "red": 5114,
+        "green": 5682,
+        "dark": 17,
+        "colors": 300
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": []
+}

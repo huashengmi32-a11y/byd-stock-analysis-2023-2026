@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "stock": "比亚迪",
+    "ticker": "002594.SZ",
+    "priceBasis": "后复权（fqt=2）",
+    "frequency": "日频",
+    "startDate": "2023-01-03",
+    "endDate": "2026-10-27",
+    "tradingDays": 922,
+    "sourceOriginal": "用户提供：比亚迪后复权历史行情数据 (1).xlsx",
+    "sourceExtension": "东方财富历史行情接口：secid=0.002594, klt=101, fqt=2",
+    "generatedAtUtc": "2026-10-27T11:50:09+00:00"
+  },
+  "keyMetrics": {
+    "latestClose": 256.57,
+    "latestDate": "2026-10-27",
+    "latestChangePct": -0.45,
+    "periodReturnPct": -1.97,
+    "annualizedVolatilityPct": 30.8,
+    "maxDrawdownPct": -44.56,
+    "maxDrawdownPeakDate": "2023-02-01",
+    "maxDrawdownTroughDate": "2024-02-02",
+    "highestPrice": 422.47,
+    "highestDate": "2025-05-23",
+    "lowestPrice": 165.17,
+    "lowestDate": "2024-02-05",
+    "positiveDays": 426,
+    "negativeDays": 495,
+    "winRatePct": 46.25,
+    "latestMA20": 259.23,
+    "latestMA60": 271.7,
+    "latestMA120": 278.5,
+    "latestRSI14": 44.67,
+    "latestTurnoverPct": 0.58
+  },
+  "annualSummary": [
+    {
+      "年份": "2023",
+      "交易日数": 242,
+      "期初基准": 261.73,
+      "期末收盘": 200.4,
+      "年度涨跌幅": -23.43,
+      "年内最高": 307.38,
+      "年内最低": 185.25,
+      "成交额_亿元": 6866.82,
+      "日均换手率": 0.98
+    },
+    {
+      "年份": "2024",
+      "交易日数": 242,
+      "期初基准": 200.4,
+      "期末收盘": 288.15,
+      "年度涨跌幅": 43.79,
+      "年内最高": 343.53,
+      "年内最低": 165.17,
+      "成交额_亿元": 7535.09,
+      "日均换手率": 1.1
+    },
+    {
+      "年份": "2025",
+      "交易日数": 243,
+      "期初基准": 288.15,
+      "期末收盘": 302.63,
+      "年度涨跌幅": 5.03,
+      "年内最高": 422.47,
+      "年内最低": 267.7,
+      "成交额_亿元": 12594.79,
+      "日均换手率": 1.34
+    },
+    {
+      "年份": "2026",
+      "交易日数": 195,
+      "期初基准": 302.63,
+      "期末收盘": 256.57,
+      "年度涨跌幅": -15.22,
+      "年内最高": 344.93,
+      "年内最低": 242.27,
+      "成交额_亿元": 7957.24,
+      "日均换手率": 1.24
+    }
+  ],
+  "validation": {
+    "overlapRows": 242,
+    "originalRows": 242,
+    "maxAbsDifferenceByField": {
+      "开盘": 0.0,
+      "收盘": 0.0,
+      "最高": 0.0,
+      "最低": 0.0,
+      "成交量": 0.0,
+      "成交额": 0.0,
+      "振幅": 0.0,
+      "涨跌幅": 0.0,
+      "涨跌额": 0.0,
+      "换手率": 0.0
+    },
+    "sameTradingCalendar": true,
+    "adjustmentMatched": true
+  },
+  "methodology": {
+    "return": "收盘价环比收益率",
+    "volatility": "日收益率样本标准差 × √252",
+    "drawdown": "后复权收盘价相对历史运行峰值的跌幅",
+    "ma": "简单移动平均，窗口为 20/60/120 个交易日",
+    "rsi": "RSI(14)，Wilder 平滑",
+    "annualReturn": "期末收盘 / 上一年末收盘 - 1；2023 年使用首个交易日收盘"
+  }
+}

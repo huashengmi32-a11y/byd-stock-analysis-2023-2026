@@ -1,0 +1,18 @@
+{
+  "overlapRows": 242,
+  "originalRows": 242,
+  "maxAbsDifferenceByField": {
+    "开盘": 0.0,
+    "收盘": 0.0,
+    "最高": 0.0,
+    "最低": 0.0,
+    "成交量": 0.0,
+    "成交额": 0.0,
+    "振幅": 0.0,
+    "涨跌幅": 0.0,
+    "涨跌额": 0.0,
+    "换手率": 0.0
+  },
+  "sameTradingCalendar": true,
+  "adjustmentMatched": true
+}

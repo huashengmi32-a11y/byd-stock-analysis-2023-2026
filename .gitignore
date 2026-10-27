@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.venv/
+.DS_Store
+.idea/
+.vscode/
+work/
+outputs/
+.playwright/
+test-results/
